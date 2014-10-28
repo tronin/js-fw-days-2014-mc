@@ -9,12 +9,12 @@ var Ebay = {
   search: function (term, perPage) {
     var params = {
     	"OPERATION-NAME": "findItemsAdvanced",
-	"SERVICE-VERSION": "1.0.0",
-	"SECURITY-APPNAME": EbayAPI.appid,
-	"RESPONSE-DATA-FORMAT": "JSON",
-	"REST-PAYLOAD": "true",
-	"paginationInput.entriesPerPage": perPage || 40,
-	"keywords": term
+    	"SERVICE-VERSION": "1.0.0",
+    	"SECURITY-APPNAME": EbayAPI.appid,
+    	"RESPONSE-DATA-FORMAT": "JSON",
+    	"REST-PAYLOAD": "true",
+    	"paginationInput.entriesPerPage": perPage || 40,
+    	"keywords": term
     };
     return $.ajax({
       dataType: "jsonp",
